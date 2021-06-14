@@ -1,0 +1,15 @@
+{
+  "name": "introtonode",
+  "version": "1.0.0",
+  "description": "This is Intro to node Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhijeet Anand",
+  "license": "ISC",
+  "dependencies": {
+    "superheroes": "^3.0.0",
+    "supervillains": "^3.0.0"
+  }
+}
