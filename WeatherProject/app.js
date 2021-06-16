@@ -4,7 +4,7 @@ const https = require("https");  // Go to https nodejs website to read documenta
 const app = express();
 
 app.get("/",function(req,res){
-    const url = "https://api.openweathermap.org/data/2.5/weather?q=Araria&appid=56cfd6c32042dd5b9a215d2a1009c73a&units=metric";
+    const url = "https://api.openweathermap.org/data/2.5/weather?q=Araria&appid=&units=metric";
 
     https.get(url,function(response){
         console.log(response);
