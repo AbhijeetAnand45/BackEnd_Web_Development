@@ -33,11 +33,7 @@ app.post("/",function(req,res){
       const url = "https://us7.api.mailchimp.com/3.0/lists/7f181f37b0";
       const options = {
         method: "POST",
-        headers:{
-          Authorization: "auth 0915728a440865dd8945ecbc8e2cee37-us7"
-        }
-        // auth: "aabhijeet011:0915728a440865dd8945ecbc8e2cee37-us7"
-
+       auth: /// to update the code of api using gitignore
       }
       const request = https.request(url,options,function(response){
         if(response.statusCode === 200){
@@ -62,8 +58,3 @@ app.listen(3000,function(){
     console.log("Server is running at port 3000");
 })
 
-//Api key
-// 0915728a440865dd8945ecbc8e2cee37-us7
-
-//list id
-// 7f181f37b0
