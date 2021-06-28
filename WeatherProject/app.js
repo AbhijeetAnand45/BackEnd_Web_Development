@@ -6,6 +6,7 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: true}))
 
 app.get("/",function(req,res){
+<<<<<<< HEAD
     res.sendFile(__dirname + "/index.html");
 })
 app.post("/",function(req,res){
@@ -13,6 +14,9 @@ app.post("/",function(req,res){
     const apiID = "56cfd6c32042dd5b9a215d2a1009c73a";
     const unit = "metric";
     const url = "https://api.openweathermap.org/data/2.5/weather?q="+ query + "&appid="+ apiID + "&units="+ unit;
+=======
+    const url = "https://api.openweathermap.org/data/2.5/weather?q=Araria&appid=&units=metric";
+>>>>>>> origin
 
     https.get(url,function(response){
         console.log(response);
